@@ -1,0 +1,4 @@
+Running app:
+  rails s
+  redis-server
+  bundle exec sidekiq
