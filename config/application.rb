@@ -1,8 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-require 'sidekiq/web'
-mount Sidekiq::Web => '/sidekiq'
+# require 'sidekiq/web'
+# mount Sidekiq::Web => '/sidekiq'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
