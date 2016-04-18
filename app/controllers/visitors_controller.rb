@@ -4,8 +4,8 @@ class VisitorsController < ApplicationController
 
   def contact
     mailer = JSON.generate({ 'name' => mailer_params[:name],
-                        'email' => mailer_params[:email],
-                        'message' => mailer_params[:message] })
+      'email' => mailer_params[:email],
+      'message' => mailer_params[:message] })
     PostmanWorker.perform_async(mailer, 5)
     redirect_to :root
     # render 'index'
